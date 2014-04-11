@@ -2,9 +2,16 @@ package com.ctrip.study.algorithm.sort;
 
 import java.util.Arrays;
 
+// TODO: Auto-generated Javadoc
+/**
+ * 冒泡排序算法实现.
+ */
 public class BubbleSort {
 	
 	
+	/**
+	 * Sort.
+	 */
 	public static void sort(){
 		int[] array = SortUtil.createArray();
 		System.out.println("原始的数组：" + Arrays.toString(array));
@@ -20,6 +27,11 @@ public class BubbleSort {
 	}
 	
 	
+	/**
+	 * The main method.
+	 *
+	 * @param args the arguments
+	 */
 	public static void main(String[] args) {
 		BubbleSort.sort();
 	}
