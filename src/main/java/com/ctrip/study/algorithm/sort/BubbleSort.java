@@ -11,10 +11,9 @@ public class BubbleSort {
 	
 	/**
 	 * Sort.
+	 * @param array 
 	 */
-	public static void sort(){
-		int[] array = SortUtil.createArray();
-		System.out.println("原始的数组：" + Arrays.toString(array));
+	public static void sort(int[] array){
 		for (int i = 1; i < array.length; i++) {
 			for (int j = 0; j < array.length - i; j++) {
 				if(array[j] > array[j + 1]){
@@ -33,7 +32,9 @@ public class BubbleSort {
 	 * @param args the arguments
 	 */
 	public static void main(String[] args) {
-		BubbleSort.sort();
+		int[] array = SortUtil.createArray();
+		System.out.println("原始的数组：" + Arrays.toString(array));
+		BubbleSort.sort(array);
 	}
 
 }

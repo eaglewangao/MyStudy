@@ -15,15 +15,15 @@ public class QuickSort {
 	 *            the arguments
 	 */
 	public static void main(String[] args) {
-		QuickSort.sort();
+		int[] array = SortUtil.createArray();
+		System.out.println("原始的数组：" + Arrays.toString(array));
+		QuickSort.sort(array);
 	}
 
 	/**
 	 * Sort.
 	 */
-	private static void sort() {
-		int[] array = SortUtil.createArray();
-		System.out.println(Arrays.toString(array));
+	private static void sort(int[] array) {
 		int low = 0, high = array.length - 1;
 		quickSort(array, low, high);
 	}
