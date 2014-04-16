@@ -10,6 +10,7 @@
 
 	<properties>
 		<!-- 主要依赖库的版本定义 -->
+		<lucene.version>4.5.0</lucene.version>
 		<spring.version>3.2.3.RELEASE</spring.version>
 		<hibernate.version>4.2.3.Final</hibernate.version>
 		<mybatis.version>3.2.2</mybatis.version>
@@ -146,7 +147,43 @@
 	            <version>2.10.0</version>  
 	        </dependency>
 		-->   
-		
+			<!-- lucene -->
+			<dependency>
+				<groupId>org.apache.lucene</groupId>
+				<artifactId>lucene-core</artifactId>
+				<version>${lucene.version}</version>
+			</dependency>
+			
+			<dependency>
+				<groupId>org.apache.lucene</groupId>
+				<artifactId>lucene-queries</artifactId>
+				<version>${lucene.version}</version>
+			</dependency>
+			
+			<dependency>
+				<groupId>org.apache.lucene</groupId>
+				<artifactId>lucene-queryparser</artifactId>
+				<version>${lucene.version}</version>
+			</dependency>
+			
+			<dependency>
+				<groupId>org.apache.lucene</groupId>
+				<artifactId>lucene-highlighter</artifactId>
+				<version>${lucene.version}</version>
+			</dependency>
+			
+			<dependency>
+				<groupId>org.apache.lucene</groupId>
+				<artifactId>lucene-analyzers-common</artifactId>
+				<version>${lucene.version}</version>
+			</dependency>
+			
+			<dependency>
+				<groupId>org.apache.lucene</groupId>
+				<artifactId>lucene-facet</artifactId>
+				<version>${lucene.version}</version>
+			</dependency>
+            
 			<!-- SPRING basic begin(一般不需要显式定义) -->
 			<dependency>
 				<groupId>org.springframework</groupId>
